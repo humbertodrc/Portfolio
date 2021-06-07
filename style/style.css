@@ -84,7 +84,7 @@ h1::after{
 
 .mapa{
     background: url(../img/mapa.png);
-    background-image: no-repeat;
+    background-repeat: no-repeat;
     background-image: center;
     width: 100%;
     height: 500px;
