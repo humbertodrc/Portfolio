@@ -2,7 +2,7 @@
 
 /* ==============================General============================================ */
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     background: #000;
@@ -11,52 +11,52 @@ body{
 /* ==============================General============================================ */
 
 .flotante {
-    position:fixed;
-    z-index:999999;
-	bottom:10px;
-	right:10px;
+    position: fixed;
+    z-index: 999999;
+    bottom: 10px;
+    right: 10px;
 }
 
 
 /* ==============================Menu============================================ */
 
-#menu li > a{
+#menu li>a {
     font-size: 16px;
     font-weight: bold;
     color: #f3f3f3;
 }
 
-#menu form > button {
+#menu form>button {
     font-size: 14px;
     font-weight: bold;
 }
 
 /* ==============================Video============================================ */
 
-header{
-    width:100%;
-    height:auto;
-    position:relative;
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
     overflow: hidden;
 }
 
-video{
-    width:100%;
+video {
+    width: 100%;
 }
 
-.absolute{
-    width:100%;
-    height:100%;
+.absolute {
+    width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
-    position:absolute;
+    position: absolute;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 50px;
     font-weight: 600;
     z-index: 100;
@@ -64,7 +64,7 @@ h1{
     margin-bottom: 30px;
 }
 
-h1::after{
+h1::after {
     display: block;
     width: 100%;
     height: 10px;
@@ -76,59 +76,72 @@ h1::after{
 
 /* ==============================Servicios============================================ */
 
-#servicios{
+#servicios {
     background: #E0E0E0;
 }
 
 /* ==============================Ubicacion============================================ */
 
-.mapa{
-    background: url(../img/mapa.png);
-    background-repeat: no-repeat;
-    background-image: center;
-    width: 100%;
-    height: 500px;
+
+#skills {
+    background: #E0E0E0;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#local{
+.wrapper {
+    width: 50%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+.skills-title {
+    text-align: center;
+}
+
+.skills-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-icon div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icon i {
+    font-size: 2.8rem;
+}
+
+.skills-icon p {
+    margin: 3rem !important;
+}
+
+#herramientas {
     background: #E0E0E0;
     padding-bottom: 300px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.wrapper{
-    width: 50%;
-    margin-left: 100px;
-    padding-top: 100px;
-}
-
-#numeros-local div{
-    padding: 0 20px 0 0;
-    height: 48px;
-
-}
-
-#numeros-local div:not(:last-child){
-    border-right: 2px solid #3f3f3f;
-}
-
-#numeros-local div:not(:first-child){
-    padding-left: 20px;
-}
-
-#numeros-local p{
-    margin: 0;
-}
 
 /* ==============================Contacto============================================ */
 
-#bg-contacto{
+#bg-contacto {
     position: relative;
     top: -130px;
 }
 
-#seccion-contactos{
+#seccion-contactos {
     background-color: #000;
     min-height: 500px;
     position: relative;
@@ -136,7 +149,7 @@ h1::after{
 
 /* ==============================Contactos Formulario============================================ */
 
-#contenedor-formulario{
+#contenedor-formulario {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -146,37 +159,60 @@ h1::after{
     max-width: 500px;
 }
 
-#titulo-formulario{
+#titulo-formulario {
     color: #3f3f3f;
+}
+
+.img-form {
+    border-radius: 50%;
+    width: 250px;
 }
 
 /* ==============================Footer============================================ */
 
-footer{
+footer {
     background: #000;
     min-height: 100px;
 }
 
-footer p{
+footer p {
     color: #f3f3f3;
     text-align: center;
 }
 
-#iconos i{
+#iconos i {
     font-size: 26px;
     padding: 0 8px;
     color: #f3f3f3;
 }
+
+/* ==============================Barra scroll============================================ */
+/* ::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #106EFD;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 50px;
+} */
+
+
+
 /* ==============================Media Queries============================================ */
 
 /* ==============================Pantalla Ancha============================================ */
-@media (max-width: 1200px){
-    #local{
+@media (max-width: 1200px) {
+    #local {
         flex-wrap: wrap;
-        padding-top: 30px;
+        /* padding-top: 30px; */
     }
 
-    .wrapper{
+    .wrapper {
         width: 90%;
         margin: auto;
         padding-top: 50px;
@@ -185,57 +221,59 @@ footer p{
 
 
 /* ==============================Pantalla Sm ============================================ */
-@media (max-width: 768px){
-    h1{
+@media (max-width: 768px) {
+    h1 {
         font-size: 30px;
     }
 
-    h1::after{
+    h1::after {
         width: 50%;
     }
 
-    #intro, #equipo{
+    #intro,
+    #equipo {
         width: 90% !important;
     }
 
-    #equipo p{
+    #equipo p {
         display: none;
     }
 
-    .servicio-fila{
+    .servicio-fila {
         width: 100% !important;
         text-align: center;
     }
 
-    #bg-contacto{
-    top: -110px;
+    #bg-contacto {
+        top: -110px;
     }
+
+
 }
 
 
 /* ==============================Pantalla Extra Sm ============================================ */
-@media (max-width: 576px){
-    .icono-wrap{
+@media (max-width: 576px) {
+    .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
     }
 
-    h1{
+    h1 {
         font-size: 20px;
         margin-bottom: 0;
-        
+
     }
 
-    h1::after{
+    h1::after {
         width: 50%;
         height: 5px;
     }
 
-    .absolute{
+    .absolute {
         min-height: 100%;
         padding-top: 60px;
     }
 
+
 }
-
-
