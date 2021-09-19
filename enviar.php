@@ -25,7 +25,7 @@
     mail($destino, $asunto, $contacto, $headers);
     
     // Mensaje de éxito:
-    $URL="https://humbertorivero.netlify.app/"; // Ubicación de mi archivo html con mi mensaje de confirmación
+    $URL="https://trusting-shannon-af0361.netlify.app/"; // Ubicación de mi archivo html con mi mensaje de confirmación
     echo "<script>document.location.href='{$URL}';</script>";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 ?>
