@@ -795,22 +795,22 @@
                 <h2>Contáctame</h2>
                 <p class="fs-5">Desarrollo sus Proyectos</p>
             </div>
-            <form action="">
+            <form action="enviar.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com" required>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="nombre" placeholder="Pedro Perez" required>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Pedro Perez" required>
                 </div>
                 <div class="mb-3">
-                    <input type="tel" class="form-control" id="tel" placeholder="000-00-00000000" required>
+                    <input type="tel" class="form-control" name="tel" id="tel" placeholder="000-00-00000000" required>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="3"
                         placeholder="Escribe tu mensaje"></textarea>
                 </div>
                 <div class="mb-3">
-                    <button class="btn btn-primary w-100 fs-5" type="button">Enviar Mensaje</buttone>
+                    <button class="btn btn-primary w-100 fs-5" type="submit">Enviar Mensaje</buttone>
                 </div>
             </form>
         </div>
