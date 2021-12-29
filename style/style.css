@@ -76,6 +76,12 @@ h1::after {
 
 /* ==============================Servicios============================================ */
 
+.bg-dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #servicios {
     background: #E0E0E0;
 }
